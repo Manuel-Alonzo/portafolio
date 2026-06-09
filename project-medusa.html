@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centro Estético Medusa — Manuel Alonzo</title>
+<!-- SEO / Open Graph -->
+<meta name="description" content="Manual de marca para un centro estético: identidad, aplicaciones y lineamientos de uso.">
+<link rel="canonical" href="https://manuel-alonzo-portfolio.vercel.app/project-medusa.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Centro Estético Medusa — Manuel Alonzo">
+<meta property="og:description" content="Manual de marca para un centro estético: identidad, aplicaciones y lineamientos de uso.">
+<meta property="og:url" content="https://manuel-alonzo-portfolio.vercel.app/project-medusa.html">
+<meta property="og:image" content="https://manuel-alonzo-portfolio.vercel.app/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="es_CO">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Centro Estético Medusa — Manuel Alonzo">
+<meta name="twitter:description" content="Manual de marca para un centro estético: identidad, aplicaciones y lineamientos de uso.">
+<meta name="twitter:image" content="https://manuel-alonzo-portfolio.vercel.app/og-image.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;500;600;700&family=Gloock:ital@0;1&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --background: #101010;
+  --on-background: #f2f2f2;
+  --muted: #f2f2f280;
+  --border: #f2f2f21a;
+  --card-bg: #f2f2f20d;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background-color:var(--background);
+  color:var(--on-background);
+  font-family:'Albert Sans',sans-serif;
+  font-size:14px;
+  line-height:1.5;
+  -ms-overflow-style:none;
+  scrollbar-width:none;
+  overflow-x:hidden;
+}
+body::-webkit-scrollbar{display:none}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+
+/* ===== NAV (oculto en proyecto) ===== */
+.section-nav{display:none}
+
+/* ===== BACK BUTTON (fixed top) ===== */
+.section-back{
+  z-index:9;
+  background-image:linear-gradient(rgba(0,0,0,0.25),transparent);
+  height:104px;
+  padding:24px 48px 0;
+  display:flex;
+  justify-content:space-between;
+  position:fixed;
+  inset:0 0 auto 0;
+}
+.button-project-back{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  -webkit-backdrop-filter:blur(10px);
+  backdrop-filter:blur(10px);
+  background-color:#f2f2f226;
+  border:1px solid #f2f2f20a;
+  border-radius:100px;
+  padding:10px 24px 10px 12px;
+  font-family:'Outfit',sans-serif;
+  font-size:14px;
+  font-weight:500;
+  color:var(--on-background);
+  text-decoration:none;
+  transition:all .4s;
+  pointer-events:auto;
+}
+.button-project-back:hover{background-color:#f2f2f233;border-color:#f2f2f21a}
+.button-project-back svg{transition:transform .3s}
+.button-project-back:hover svg{transform:translateX(-2px)}
+.icon-external{width:11px;height:11px;opacity:.7}
+.section-back{
+  z-index:9;
+  background-image:linear-gradient(rgba(0,0,0,0.25),transparent);
+  height:104px;
+  padding:24px 48px 0;
+  display:flex;
+  justify-content:space-between;
+  position:fixed;
+  inset:0 0 auto 0;
+}
+.button-project-back{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  -webkit-backdrop-filter:blur(10px);
+  backdrop-filter:blur(10px);
+  background-color:#f2f2f226;
+  border:1px solid #f2f2f20a;
+  border-radius:100px;
+  padding:10px 24px 10px 12px;
+  font-family:'Outfit',sans-serif;
+  font-size:14px;
+  font-weight:500;
+  color:var(--on-background);
+  text-decoration:none;
+  transition:all .4s;
+  pointer-events:auto;
+}
+.button-project-back:hover{background-color:#f2f2f233;border-color:#f2f2f21a}
+.button-project-back svg{transition:transform .3s}
+.button-project-back:hover svg{transform:translateX(-2px)}
+.nav-bar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  height:56px;
+  pointer-events:none;
+}
+.nav-left,.nav-right{flex:1;display:flex;align-items:center}
+.nav-right{justify-content:flex-end}
+.logo-block{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  pointer-events:auto;
+  cursor:pointer;
+}
+.logomark{
+  height:36px;
+  width:32px;
+  background:var(--on-background);
+  mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 40'><path d='M4 4h24v8H12v8h12v8H12v8H4z' fill='black'/></svg>") center/contain no-repeat;
+  -webkit-mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 40'><path d='M4 4h24v8H12v8h12v8H12v8H4z' fill='black'/></svg>") center/contain no-repeat;
+}
+.logo-text{display:flex;flex-direction:column;justify-content:center;margin-top:1px}
+.text-logo{
+  font-family:'Outfit',sans-serif;
+  font-size:20px;
+  font-weight:500;
+  line-height:20px;
+}
+.text-underlogo{
+  color:var(--muted);
+  font-family:'Outfit',sans-serif;
+  font-size:12px;
+  line-height:12px;
+  margin-top:4px;
+}
+/* nav-pill-wrapper, nav-indicator y nav-pill eliminados del proyecto */
+
+/* ===== BACK BUTTON (fixed top) ===== */
+.section-back{
+  z-index:9;
+  background-image:linear-gradient(rgba(0,0,0,0.25),transparent);
+  height:104px;
+  padding:24px 48px 0;
+  display:flex;
+  justify-content:space-between;
+  position:fixed;
+  inset:0 0 auto 0;
+}
+.button-project-back{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  -webkit-backdrop-filter:blur(10px);
+  backdrop-filter:blur(10px);
+  background-color:#f2f2f226;
+  border:1px solid #f2f2f20a;
+  border-radius:100px;
+  padding:10px 24px 10px 12px;
+  font-family:'Outfit',sans-serif;
+  font-size:14px;
+  font-weight:500;
+  color:var(--on-background);
+  text-decoration:none;
+  transition:all .4s;
+  pointer-events:auto;
+}
+.button-project-back:hover{background-color:#f2f2f233;border-color:#f2f2f21a}
+.button-project-back svg{transition:transform .3s}
+.button-project-back:hover svg{transform:translateX(-2px)}
+
+/* ===== BANNER (top) ===== */
+.section-banner{
+  padding:140px 48px 80px;
+  display:flex;
+  justify-content:center;
+  position:relative;
+  overflow:hidden;
+}
+.banner-bg-gradient{
+  position:absolute;
+  inset:140px 24px auto 24px;
+  height:50%;
+  background:linear-gradient(to right,transparent 5%,var(--on-background) 50%,transparent 95%);
+  opacity:.5;
+  filter:blur(120px);
+  border-radius:2000px;
+  z-index:0;
+}
+.banner-bg-stadiabt{background:radial-gradient(circle farthest-side at 50% 0,#00639b80,transparent)}
+.banner-bg-spotlight{background:radial-gradient(circle farthest-side at 50% 0,#0890fb66,transparent 60%),radial-gradient(circle farthest-side at 50% 0,#9e05d666,transparent)}
+.banner-bg-thn{background:radial-gradient(circle farthest-side at 50% 0,#fff3,transparent)}
+.banner-bg-rbc{background:radial-gradient(circle farthest-side at 50% 0,#006ac399,transparent)}
+.banner-bg-renova{background:radial-gradient(circle farthest-side at 50% 0,#2d5a3d80,transparent)}
+.banner-bg-basico{background:radial-gradient(circle farthest-side at 50% 0,#d9b46f66,transparent 58%),radial-gradient(circle farthest-side at 50% 0,#6f4a2f4d,transparent)}
+.banner-bg-leven{background:radial-gradient(circle farthest-side at 50% 0,#7c5cff66,transparent 60%),radial-gradient(circle farthest-side at 50% 0,#00d4ff4d,transparent)}
+.banner-bg-medusa{background:radial-gradient(circle farthest-side at 50% 0,#a88f724d,transparent 60%),radial-gradient(circle farthest-side at 50% 0,#57463233,transparent)}
+.banner-bg-pape{background:radial-gradient(circle farthest-side at 50% 0,#2bd4c466,transparent 58%),radial-gradient(circle farthest-side at 50% 0,#1f7a6e4d,transparent)}
+.banner-bg-instagram{background:radial-gradient(circle farthest-side at 50% 0,#e1306c66,transparent 60%),radial-gradient(circle farthest-side at 50% 0,#833ab466,transparent)}
+.banner-bg-catalogo{background:radial-gradient(circle farthest-side at 50% 0,#ff6b3566,transparent)}
+.banner-bg-spot{background:radial-gradient(circle farthest-side at 50% 0,#7c3aed66,transparent)}
+.banner-bg-brand{background:radial-gradient(circle farthest-side at 50% 0,#0890fb66,transparent)}
+
+.container-banner{
+  z-index:3;
+  display:flex;
+  flex-direction:column;
+  gap:32px;
+  align-items:stretch;
+  width:1044px;
+  max-width:100%;
+  position:relative;
+}
+.project-title-hero{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+  align-items:center;
+  text-align:center;
+}
+.text-projectpage-year{
+  opacity:.5;
+  color:var(--on-background);
+  font-family:'Outfit',sans-serif;
+  font-size:18px;
+  font-weight:400;
+}
+.text-projectpage-title{
+  font-family:'Outfit',sans-serif;
+  font-size:64px;
+  font-weight:500;
+  line-height:1.1;
+  letter-spacing:-1.5px;
+  background-image:linear-gradient(to bottom,var(--on-background) 50%,transparent);
+  -webkit-text-fill-color:transparent;
+  -webkit-background-clip:text;
+  background-clip:text;
+}
+.text-projectpage-subtitle{
+  font-family:'Outfit',sans-serif;
+  font-size:20px;
+  font-weight:400;
+  color:var(--muted);
+  max-width:680px;
+  text-align:center;
+}
+.project-banner-image{
+  margin-top:24px;
+  border-radius:16px;
+  overflow:hidden;
+  border:1px solid var(--border);
+  background:linear-gradient(135deg,#2a2a2a,#1a1a1a);
+  aspect-ratio:16/9;
+}
+.project-banner-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.project-fade{
+  position:absolute;
+  inset:auto 0 0 0;
+  height:240px;
+  background-image:linear-gradient(to bottom,transparent,var(--background));
+  z-index:2;
+}
+
+/* ===== OVERVIEW ===== */
+.section-overview{
+  padding:104px 48px;
+  display:flex;
+  flex-direction:column;
+  gap:64px;
+  align-items:center;
+}
+.container-overview{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:48px;
+  width:1044px;
+  max-width:100%;
+}
+.overview-left,.overview-right{
+  display:flex;
+  flex-direction:column;
+  gap:40px;
+}
+.overview-text-wrapper{display:flex;flex-direction:column;gap:8px}
+.text-overview-overline{
+  font-family:'Outfit',sans-serif;
+  font-size:14px;
+  font-weight:500;
+  line-height:18px;
+  letter-spacing:.2px;
+}
+.text-projectpage-body{
+  font-family:'Albert Sans',sans-serif;
+  font-size:18px;
+  line-height:1.6;
+  opacity:.85;
+  padding-right:24px;
+}
+.text-callout{
+  font-family:'Outfit',sans-serif;
+  font-size:24px;
+  font-weight:500;
+  line-height:140%;
+  letter-spacing:.2px;
+}
+.text-projectpage-overline{
+  color:#f2f2f266;
+  font-family:'Outfit',sans-serif;
+  font-size:11px;
+  font-weight:500;
+  letter-spacing:1.5px;
+  margin-top:1px;
+  line-height:19px;
+  text-transform:uppercase;
+}
+.project-link-pill{
+  display:inline-flex;
+  align-items:center;
+  width:max-content;
+  border:1px solid var(--border);
+  border-radius:999px;
+  background-color:#f2f2f20d;
+  padding:10px 14px;
+  color:var(--on-background);
+  font-family:'Outfit',sans-serif;
+  font-size:13px;
+  transition:border-color .25s,background-color .25s;
+}
+.project-link-pill:hover{border-color:#f2f2f240;background-color:#f2f2f21a}
+.project-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:18px;
+}
+.project-tag{
+  border:1px solid var(--border);
+  border-radius:999px;
+  color:var(--muted);
+  padding:8px 10px;
+  font-family:'Outfit',sans-serif;
+  font-size:12px;
+  line-height:1;
+}
+
+/* ===== CALLOUTS (Challenge/Discovery/Success) ===== */
+.section-general{
+  display:flex;
+  flex-direction:column;
+  gap:48px;
+  width:1044px;
+  max-width:100%;
+}
+.container-callouts{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+.callout-block{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+  border:1px solid var(--border);
+  border-radius:24px;
+  padding:32px 40px 40px;
+  position:relative;
+  overflow:hidden;
+  background-image:radial-gradient(circle at 50% 0,#64d2ff0d,transparent 70%);
+}
+.callout-block.challenge{background-image:radial-gradient(circle at 50% 0,#ffd60a0d,transparent 70%)}
+.callout-block.discovery{background-image:radial-gradient(circle at 50% 0,#63e6e20d,transparent 70%)}
+.callout-block.success{background-image:radial-gradient(circle at 50% 0,#30d1580d,transparent 70%)}
+.callout-block::before{
+  content:'';
+  position:absolute;
+  inset:0 0 auto 0;
+  height:1px;
+  background-image:linear-gradient(to right,transparent 5%,#ffd60a99 50%,transparent 95%);
+}
+.callout-block.discovery::before{background-image:linear-gradient(to right,transparent 10%,#63e6e2 50%,transparent 85%)}
+.callout-block.success::before{background-image:linear-gradient(to right,transparent 10%,#30d158 50%,transparent 90%)}
+.callout-block .overline{display:flex;align-items:center;gap:8px}
+.callout-block .overline-dot{
+  width:6px;height:6px;border-radius:50%;
+  background:#ffd60a;box-shadow:0 0 8px #ffd60a80;
+}
+.callout-block.discovery .overline-dot{background:#63e6e2;box-shadow:0 0 8px #63e6e280}
+.callout-block.success .overline-dot{background:#30d158;box-shadow:0 0 8px #30d15880}
+.callout-title{
+  font-family:'Outfit',sans-serif;
+  font-size:20px;
+  font-weight:500;
+  line-height:1.3;
+}
+.callout-text{
+  font-size:15px;
+  line-height:1.6;
+  opacity:.8;
+}
+
+/* ===== GALLERY ===== */
+.gallery-block{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+  padding:0 48px;
+  align-items:center;
+}
+.gallery-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+  width:1044px;
+  max-width:100%;
+}
+.gallery-item{
+  border-radius:16px;
+  overflow:hidden;
+  border:1px solid var(--border);
+  background:linear-gradient(135deg,#2a2a2a,#1a1a1a);
+  aspect-ratio:4/3;
+}
+.gallery-item img{width:100%;height:100%;object-fit:cover}
+.gallery-item.full-width{grid-column:1/-1;aspect-ratio:16/9}
+.gallery-item.case-board{
+  grid-column:1/-1;
+  aspect-ratio:auto;
+  background:#efe6d8;
+}
+.gallery-item.case-board img{
+  height:auto;
+  object-fit:contain;
+}
+.gallery-note-card{
+  grid-column:1/-1;
+  display:grid;
+  grid-template-columns:1fr 1.2fr;
+  gap:24px;
+  border:1px solid var(--border);
+  border-radius:20px;
+  background-color:var(--card-bg);
+  padding:28px;
+}
+.gallery-note-title{
+  font-family:'Outfit',sans-serif;
+  font-size:22px;
+  font-weight:500;
+  line-height:1.2;
+}
+.gallery-note-copy{
+  color:var(--muted);
+  font-size:15px;
+  line-height:1.6;
+}
+
+/* ===== NEXT PROJECT (footer-like) ===== */
+.section-next-project{
+  padding:80px 48px 120px;
+  display:flex;
+  justify-content:center;
+}
+.container-next-project{
+  width:1044px;
+  max-width:100%;
+  display:flex;
+  flex-direction:column;
+  gap:48px;
+  align-items:flex-start;
+  position:relative;
+}
+.text-next-overline{
+  color:var(--muted);
+  font-family:'Outfit',sans-serif;
+  font-size:11px;
+  font-weight:500;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+}
+.next-project-card{
+  display:flex;
+  align-items:center;
+  gap:24px;
+  width:100%;
+  padding:32px;
+  border-radius:24px;
+  background-color:var(--card-bg);
+  border:1px solid var(--border);
+  transition:all .3s;
+  text-decoration:none;
+}
+.next-project-card:hover{border-color:#f2f2f240;transform:translateY(-4px)}
+.next-project-image{
+  width:160px;
+  height:100px;
+  border-radius:12px;
+  overflow:hidden;
+  flex-shrink:0;
+  background:linear-gradient(135deg,#2a2a2a,#1a1a1a);
+}
+.next-project-image img{width:100%;height:100%;object-fit:cover}
+.next-project-info{flex:1;display:flex;flex-direction:column;gap:4px}
+.next-project-info .title{
+  font-family:'Outfit',sans-serif;
+  font-size:24px;
+  font-weight:500;
+}
+.next-project-info .meta{font-size:13px;color:var(--muted)}
+.next-project-arrow{
+  width:48px;
+  height:48px;
+  border-radius:50%;
+  border:1px solid var(--border);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition:all .3s;
+}
+.next-project-card:hover .next-project-arrow{background:var(--on-background);color:#101}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:991px){
+  .section-nav{padding:16px 24px 0}
+
+  .section-back{padding:16px 24px 0;height:80px}
+  .section-banner{padding:120px 24px 60px}
+  .text-projectpage-title{font-size:36px;letter-spacing:-1px}
+  .text-projectpage-subtitle{font-size:16px}
+  .section-overview{padding:60px 24px}
+  .container-overview{grid-template-columns:1fr;gap:32px}
+  .container-callouts{grid-template-columns:1fr}
+  .gallery-block{padding:0 24px}
+  .gallery-grid{grid-template-columns:1fr}
+  .gallery-note-card{grid-template-columns:1fr;padding:22px}
+  .section-next-project{padding:60px 24px 80px}
+  .next-project-card{flex-direction:column;align-items:flex-start;padding:20px}
+  .next-project-image{width:100%;height:160px}
+  .text-projectpage-body{font-size:16px;padding-right:0}
+}
+</style>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style id="manuel-proj-fixes">
+/* Botón All work más pequeño */
+.section-back{height:74px;padding:18px 32px 0}
+.button-project-back{padding:8px 18px 8px 10px;font-size:13px}
+.button-project-back svg{width:12px;height:12px}
+@media(max-width:991px){.section-back{height:60px;padding:14px 20px 0}}
+/* Galería full-width (leven/medusa muestran detalles grandes, sin recorte) */
+.gallery-item.fw{grid-column:1/-1;aspect-ratio:auto;background:transparent;border:1px solid var(--border);border-radius:16px;overflow:hidden}
+.gallery-item.fw img{height:auto;object-fit:contain}
+/* Lightbox: clic en cualquier imagen para verla en grande */
+.gallery-item img,.project-banner-image img{cursor:zoom-in}
+#lightbox{position:fixed;inset:0;background:rgba(8,8,8,.94);display:none;align-items:center;justify-content:center;z-index:1000;cursor:zoom-out;padding:28px;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+#lightbox.open{display:flex}
+#lightbox img{max-width:96%;max-height:96%;object-fit:contain;border-radius:8px;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+#lightbox .lb-close{position:fixed;top:22px;right:28px;color:#f2f2f2;font-family:'Outfit',sans-serif;font-size:34px;line-height:1;opacity:.85}
+</style>
+</head>
+<body>
+
+<div class="section-back">
+  <a class="button-project-back" href="index.html">
+    <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 13l-5-5 5-5"/></svg>
+    <span>All work</span>
+  </a>
+</div>
+
+<!-- ===== BANNER ===== -->
+<section class="section-banner banner-bg-medusa">
+  <div class="banner-bg-gradient"></div>
+  <div class="container-banner">
+    <div class="project-title-hero">
+      <div class="text-projectpage-year">2025 — Manual de marca</div>
+      <h1 class="text-projectpage-title">Centro Estético Medusa</h1>
+      <p class="text-projectpage-subtitle">Manual de marca para un centro estético: construcción de identidad, aplicaciones y lineamientos de uso.</p>
+    </div>
+    <div class="project-banner-image">
+      <img src="portfolio-assets/medusa-cover.jpg" alt="Centro Estético Medusa">
+    </div>
+  </div>
+  <div class="project-fade"></div>
+</section>
+
+<!-- ===== OVERVIEW ===== -->
+<section class="section-overview">
+  <div class="container-overview">
+    <div class="overview-left">
+      <div class="overview-text-wrapper">
+        <div class="text-projectpage-overline">Role</div>
+        <p class="text-callout">Diseño gráfico, identidad visual y manual de marca</p>
+      </div>
+      <div class="overview-text-wrapper">
+        <div class="text-projectpage-overline">Year</div>
+        <p class="text-body" style="font-size:18px">2025</p>
+      </div>
+      <div class="overview-text-wrapper">
+        <div class="text-projectpage-overline">Contexto</div>
+        <p class="text-body" style="font-size:18px">Proyecto publicado en Behance</p>
+      </div>
+      <div class="overview-text-wrapper">
+        <div class="text-projectpage-overline">Herramientas</div>
+        <p class="text-body" style="font-size:18px">Adobe Photoshop + Adobe Illustrator</p>
+      </div>
+      <div class="overview-text-wrapper">
+        <div class="text-projectpage-overline">Proyecto original</div>
+        <a class="project-link-pill" href="https://www.behance.net/gallery/235896741/Centro-Esttico-Medusa-Manual-de-Marca" target="_blank" rel="noopener">Ver en Behance</a>
+      </div>
+    </div>
+    <div class="overview-right">
+      <div class="overview-text-wrapper">
+        <div class="text-projectpage-overline">Overview</div>
+        <p class="text-projectpage-body">Centro Estético Medusa es un proyecto de identidad y manual de marca para un centro de estética. El objetivo era construir una imagen cuidada, femenina y profesional que transmitiera confianza.</p>
+        <p class="text-projectpage-body" style="margin-top:16px">El manual define logotipo, paleta, tipografía y aplicaciones, dejando reglas claras de uso para que la marca se mantenga consistente en cada pieza.</p>
+        <div class="project-tags">
+          <span class="project-tag">Brand identity</span>
+          <span class="project-tag">Brand manual</span>
+          <span class="project-tag">Beauty</span>
+          <span class="project-tag">Visual identity</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CALLOUTS (Challenge / Discovery / Success) ===== -->
+<section class="section-overview">
+  <div class="section-general">
+    <div class="container-callouts">
+      <div class="callout-block challenge">
+        <div class="overline">
+          <div class="overline-dot"></div>
+          <div class="text-projectpage-overline" style="margin:0">Challenge</div>
+        </div>
+        <h3 class="callout-title">Transmitir cuidado y confianza</h3>
+        <p class="callout-text">El reto era que la marca se sintiera estética y profesional a la vez, conectando con el público de un centro de belleza sin caer en lo genérico.</p>
+      </div>
+      <div class="callout-block discovery">
+        <div class="overline">
+          <div class="overline-dot"></div>
+          <div class="text-projectpage-overline" style="margin:0">Discovery</div>
+        </div>
+        <h3 class="callout-title">Un manual con reglas claras</h3>
+        <p class="callout-text">La solución fue documentar la identidad en un manual: usos correctos, paleta, tipografía y aplicaciones, para mantener coherencia en el tiempo.</p>
+      </div>
+      <div class="callout-block success">
+        <div class="overline">
+          <div class="overline-dot"></div>
+          <div class="text-projectpage-overline" style="margin:0">Success</div>
+        </div>
+        <h3 class="callout-title">Marca consistente y aplicable</h3>
+        <p class="callout-text">El resultado es una identidad ordenada y un manual que permite aplicar la marca en redes, papelería y espacio físico sin perder unidad.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section class="gallery-block">
+  <div class="section-general">
+    <div class="gallery-grid">
+      <div class="gallery-note-card">
+        <div class="gallery-note-title">Proyecto completo</div>
+        <p class="gallery-note-copy">Manual de marca completo: construcción de identidad, paleta, tipografía y aplicaciones del Centro Estético Medusa. Haz clic en cualquier imagen para verla en grande.</p>
+      </div>
+      <div class="gallery-item fw"><img src="portfolio-assets/medusa-s01.webp" alt="Centro Estético Medusa — diapositiva 1"></div>
+      <div class="gallery-item fw"><img src="portfolio-assets/medusa-s02.webp" alt="Centro Estético Medusa — diapositiva 2" loading="lazy"></div>
+      <div class="gallery-item fw"><img src="portfolio-assets/medusa-s03.webp" alt="Centro Estético Medusa — diapositiva 3" loading="lazy"></div>
+      <div class="gallery-item fw"><img src="portfolio-assets/medusa-s04.webp" alt="Centro Estético Medusa — diapositiva 4" loading="lazy"></div>
+      <div class="gallery-item fw"><img src="portfolio-assets/medusa-s05.webp" alt="Centro Estético Medusa — diapositiva 5" loading="lazy"></div>
+      <div class="gallery-item fw"><img src="portfolio-assets/medusa-s06.webp" alt="Centro Estético Medusa — diapositiva 6" loading="lazy"></div>
+      <div class="gallery-item fw"><img src="portfolio-assets/medusa-s07.webp" alt="Centro Estético Medusa — diapositiva 7" loading="lazy"></div>
+      <div class="gallery-item fw"><img src="portfolio-assets/medusa-s08.webp" alt="Centro Estético Medusa — diapositiva 8" loading="lazy"></div>
+      <div class="gallery-item fw"><img src="portfolio-assets/medusa-s09.webp" alt="Centro Estético Medusa — diapositiva 9" loading="lazy"></div>
+      <div class="gallery-item fw"><img src="portfolio-assets/medusa-s10.webp" alt="Centro Estético Medusa — diapositiva 10" loading="lazy"></div>
+      <div class="gallery-item fw"><img src="portfolio-assets/medusa-s11.webp" alt="Centro Estético Medusa — diapositiva 11" loading="lazy"></div>
+      <div class="gallery-item fw"><img src="portfolio-assets/medusa-s12.webp" alt="Centro Estético Medusa — diapositiva 12" loading="lazy"></div>
+      <div class="gallery-item fw"><img src="portfolio-assets/medusa-s13.webp" alt="Centro Estético Medusa — diapositiva 13" loading="lazy"></div>
+      <div class="gallery-item fw"><img src="portfolio-assets/medusa-s14.webp" alt="Centro Estético Medusa — diapositiva 14" loading="lazy"></div>
+      <div class="gallery-item fw"><img src="portfolio-assets/medusa-s15.webp" alt="Centro Estético Medusa — diapositiva 15" loading="lazy"></div>
+      <div class="gallery-item fw"><img src="portfolio-assets/medusa-s16.webp" alt="Centro Estético Medusa — diapositiva 16" loading="lazy"></div>
+      <div class="gallery-item fw"><img src="portfolio-assets/medusa-s17.webp" alt="Centro Estético Medusa — diapositiva 17" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NEXT PROJECT ===== -->
+<section class="section-next-project">
+  <div class="container-next-project">
+    <div class="text-next-overline">Next project</div>
+    <a class="next-project-card" href="project-pape.html">
+      <div class="next-project-image">
+        <img src="portfolio-assets/pape-cover.png" alt="PAPE Detailing">
+      </div>
+      <div class="next-project-info">
+        <div class="text-next-overline">2025 — Identidad de marca</div>
+        <div class="title">PAPE Detailing</div>
+        <div class="meta">Proyecto de marca para un servicio de detailing.</div>
+      </div>
+      <div class="next-project-arrow">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 3h7v7M13 3L5 11M11 9v4H3V5h4"/></svg>
+      </div>
+    </a>
+  </div>
+</section>
+
+<div id="lightbox" aria-hidden="true"><span class="lb-close">&times;</span><img alt=""></div>
+<script>
+(function(){var lb=document.getElementById('lightbox'),im=lb.querySelector('img');
+document.addEventListener('click',function(e){var g=e.target.closest('.gallery-item img,.project-banner-image img');if(g){im.src=g.currentSrc||g.src;im.alt=g.alt||'';lb.classList.add('open');return;}if(e.target.closest('#lightbox')){lb.classList.remove('open');}});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('open');});})();
+</script>
+</body>
+</html>

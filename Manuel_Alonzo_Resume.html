@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manuel Alonzo — CV</title>
+<meta name="description" content="CV de Manuel Alonzo — Diseñador gráfico y editor de video, Bogotá, Colombia.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Albert+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --ink:#101010;
+  --text:#1c1c1c;
+  --muted:#6b6b72;
+  --line:#e6e6e3;
+  --soft:#f6f5f3;
+  --accent:#5a4fcf;
+}
+@page{size:A4;margin:0}
+body{
+  font-family:'Albert Sans',sans-serif;
+  background:#cfcdc8;
+  color:var(--text);
+  display:flex;
+  justify-content:center;
+  padding:40px 20px;
+  -webkit-font-smoothing:antialiased;
+}
+.page{
+  width:210mm;
+  min-height:297mm;
+  background:#fff;
+  box-shadow:0 24px 70px rgba(0,0,0,.18);
+  display:grid;
+  grid-template-rows:auto 1fr;
+}
+
+/* ── HEADER ── */
+.header{
+  background:var(--ink);
+  color:#f2f2f2;
+  padding:46px 52px 40px;
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:40px;
+  align-items:end;
+  position:relative;
+  overflow:hidden;
+}
+.header::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse 50% 120% at 100% 0,rgba(90,79,207,.45),transparent 60%);
+}
+.header > *{position:relative;z-index:1}
+.h-eyebrow{
+  font-family:'Outfit',sans-serif;
+  font-size:10px;letter-spacing:.22em;text-transform:uppercase;
+  color:#a9a4e0;margin-bottom:14px;font-weight:500;
+}
+.h-name{
+  font-family:'Outfit',sans-serif;
+  font-size:52px;font-weight:600;letter-spacing:-.02em;
+  line-height:1;color:#fff;margin-bottom:14px;
+}
+.h-tagline{font-size:12px;color:rgba(255,255,255,.55);letter-spacing:.02em}
+.header-right{text-align:right;display:flex;flex-direction:column;gap:6px;padding-bottom:4px}
+.h-contact{font-size:11.5px;color:rgba(255,255,255,.6);line-height:1.5}
+.h-contact a{color:#b9b4ee;text-decoration:none}
+
+/* ── BODY ── */
+.body{display:grid;grid-template-columns:1fr 196px}
+.main{padding:38px 40px 44px 52px}
+
+.profile{
+  font-size:12.5px;line-height:1.75;color:#3a3a40;font-weight:400;
+  margin-bottom:30px;padding-bottom:26px;border-bottom:1px solid var(--line);
+}
+.profile strong{color:var(--ink);font-weight:600}
+
+.sec{margin-bottom:24px}
+.sec-head{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+.sec-dot{width:6px;height:6px;background:var(--accent);border-radius:50%;flex-shrink:0}
+.sec-title{
+  font-family:'Outfit',sans-serif;font-size:13px;font-weight:600;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--ink);white-space:nowrap;
+}
+.sec-rule{flex:1;height:1px;background:var(--line)}
+
+.job{margin-bottom:16px;padding-left:16px;border-left:1px solid var(--line);position:relative}
+.job::before{content:'';position:absolute;left:-3px;top:5px;width:5px;height:5px;border-radius:50%;background:var(--accent)}
+.job-row{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:1px}
+.job-co{font-family:'Outfit',sans-serif;font-size:13px;font-weight:600;color:var(--ink)}
+.job-date{font-family:'Outfit',sans-serif;font-size:10px;color:var(--accent);font-weight:500;white-space:nowrap}
+.job-role{font-size:11px;color:var(--muted);margin-bottom:7px}
+.job ul{list-style:none}
+.job li{font-size:11.5px;color:#46464d;line-height:1.55;margin-bottom:3px;padding-left:13px;position:relative;font-weight:400}
+.job li::before{content:'';position:absolute;left:0;top:8px;width:5px;height:1px;background:var(--accent)}
+.job li strong{color:var(--ink);font-weight:600}
+
+/* ── SIDEBAR ── */
+.sidebar{padding:38px 26px 44px;background:var(--soft);display:flex;flex-direction:column;gap:24px}
+.s-label{
+  font-family:'Outfit',sans-serif;font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--accent);font-weight:600;padding-bottom:8px;border-bottom:1px solid var(--line);margin-bottom:12px;
+}
+.s-list{display:flex;flex-direction:column;gap:6px}
+.s-item{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.s-item .n{font-size:11.5px;color:var(--ink);font-weight:500}
+.s-item .lv{font-size:9.5px;color:var(--muted)}
+
+.tags{display:flex;flex-wrap:wrap;gap:5px}
+.tag{font-size:9.5px;color:#3a3a40;background:#fff;border:1px solid var(--line);padding:3px 8px;border-radius:20px}
+
+.edu-item{margin-bottom:10px}
+.edu-title{font-family:'Outfit',sans-serif;font-size:11.5px;font-weight:500;color:var(--ink);line-height:1.3}
+.edu-sub{font-size:10px;color:var(--muted);margin-top:1px}
+
+.lang-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:7px}
+.lang-name{font-size:11.5px;color:var(--ink);font-weight:500}
+.lang-lv{font-size:9.5px;color:var(--accent);background:rgba(90,79,207,.08);padding:2px 8px;border-radius:10px}
+
+.port-box{background:var(--ink);border-radius:10px;padding:14px 16px}
+.port-label{font-family:'Outfit',sans-serif;font-size:8.5px;color:#8f8ac7;letter-spacing:.14em;text-transform:uppercase;margin-bottom:4px}
+.port-link{font-size:11.5px;color:#fff;font-weight:500}
+.port-sub{font-size:9.5px;color:rgba(255,255,255,.4);margin-top:3px}
+
+@media print{
+  body{background:#fff;padding:0}
+  .page{box-shadow:none;width:100%;min-height:auto}
+}
+@media(max-width:760px){
+  body{padding:0}
+  .page{width:100%}
+  .header{padding:32px 24px;grid-template-columns:1fr;gap:18px}
+  .header-right{text-align:left}
+  .h-name{font-size:40px}
+  .body{grid-template-columns:1fr}
+  .main{padding:28px 24px}
+  .sidebar{padding:28px 24px}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-left">
+      <div class="h-eyebrow">Diseño gráfico · Edición de video · E-commerce</div>
+      <h1 class="h-name">Manuel Alonzo</h1>
+      <div class="h-tagline">Bogotá, Colombia · Disponible inmediatamente</div>
+    </div>
+    <div class="header-right">
+      <div class="h-contact">main@manuel-alonzo-portfolio.vercel.app</div>
+      <div class="h-contact">+57 310 819 7091</div>
+      <div class="h-contact"><a href="https://behance.net/ascento">behance.net/ascento</a></div>
+      <div class="h-contact"><a href="https://linkedin.com/in/manueljosealonzo">LinkedIn</a></div>
+    </div>
+  </header>
+
+  <!-- BODY -->
+  <div class="body">
+
+    <!-- MAIN -->
+    <div class="main">
+      <p class="profile">
+        Diseñador gráfico y editor de video con <strong>más de 5 años de experiencia</strong> en agencias, producción audiovisual y e-commerce. En Master Computers produje más de <strong>400 piezas visuales</strong> y gestioné <strong>7 tiendas oficiales</strong> en Mercado Libre de forma autónoma. Dominio completo de la cadena de producción: concepto, diseño, fotografía e impresión.
+      </p>
+
+      <div class="sec">
+        <div class="sec-head"><span class="sec-dot"></span><span class="sec-title">Experiencia</span><span class="sec-rule"></span></div>
+
+        <div class="job">
+          <div class="job-row"><span class="job-co">Master Computers</span><span class="job-date">May 2022 – Dic 2025</span></div>
+          <div class="job-role">Encargado de Cuentas · Diseñador Gráfico · Editor de Video</div>
+          <ul>
+            <li>Producción de <strong>12 videos mensuales</strong> para redes sociales y pauta digital (Meta / Google)</li>
+            <li>Diseño de <strong>6+ piezas gráficas</strong> mensuales para marcas tech y gamer</li>
+            <li>Gestión de <strong>7 tiendas oficiales</strong> en Mercado Libre: Iceberg Colombia, Nvidia, Aerocool, 4All Gamer, Ultra Gamer, Gtech Systems y Compro Gamer</li>
+            <li>Fotografía y grabación de producto · Atención directa al cliente como único diseñador</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-row"><span class="job-co">Carlos Moreno — Producción Periodística</span><span class="job-date">Ene – May 2026</span></div>
+          <div class="job-role">Editor de Video · Freelance</div>
+          <ul>
+            <li>Edición de <strong>hasta 3 videos diarios</strong> de formato noticioso bajo plazos estrictos</li>
+            <li>Desarrollo de identidad visual y branding del canal "Carlos Moreno Accidentes"</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-row"><span class="job-co">Docuplott</span><span class="job-date">Mar 2021 – Abr 2022</span></div>
+          <div class="job-role">Diseñador Gráfico · Operador de Producción</div>
+          <ul>
+            <li>Impresión gran formato, corte láser, sublimación textil y grabado en MDF</li>
+            <li>Proceso completo: diseño, selección de material e impresión final</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-row"><span class="job-co">Bendito SAS</span><span class="job-date">2021</span></div>
+          <div class="job-role">Diseñador de Indumentaria Deportiva</div>
+          <ul>
+            <li>Diseño e impresión de camisetas deportivas por sublimación y vinilo textil</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-row"><span class="job-co">Edgar Graphics Publicidad</span><span class="job-date">2020 – Dic 2021</span></div>
+          <div class="job-role">Diseñador Gráfico</div>
+          <ul>
+            <li>Logos, gigantografías, tarjetas y material institucional para empresas y gobierno</li>
+            <li>Gestión directa del cliente desde el briefing hasta la entrega del arte final</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-row"><span class="job-co">Cadena Maaz Supermercado</span><span class="job-date">2020</span></div>
+          <div class="job-role">Analista de Mercadeo · Diseñador Gráfico</div>
+          <ul>
+            <li>Fotografía de productos y contenido visual para redes sociales</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div>
+        <div class="s-label">Software</div>
+        <div class="s-list">
+          <div class="s-item"><span class="n">Photoshop</span><span class="lv">Avanzado</span></div>
+          <div class="s-item"><span class="n">Illustrator</span><span class="lv">Avanzado</span></div>
+          <div class="s-item"><span class="n">Premiere Pro</span><span class="lv">Avanzado</span></div>
+          <div class="s-item"><span class="n">CapCut</span><span class="lv">Avanzado</span></div>
+          <div class="s-item"><span class="n">CorelDRAW</span><span class="lv">Intermedio</span></div>
+          <div class="s-item"><span class="n">After Effects</span><span class="lv">Intermedio</span></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="s-label">Especialidades</div>
+        <div class="tags">
+          <span class="tag">Mercado Libre</span>
+          <span class="tag">VTEX</span>
+          <span class="tag">Meta Ads</span>
+          <span class="tag">Fotografía</span>
+          <span class="tag">Gran formato</span>
+          <span class="tag">Sublimación</span>
+          <span class="tag">Corte láser</span>
+          <span class="tag">Branding</span>
+          <span class="tag">Social Media</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="s-label">Formación</div>
+        <div class="edu-item"><div class="edu-title">Diseño Gráfico & Video</div><div class="edu-sub">Formación continua · 2018–presente</div></div>
+        <div class="edu-item"><div class="edu-title">Data Analytics</div><div class="edu-sub">Coderhouse · En curso</div></div>
+        <div class="edu-item"><div class="edu-title">Social Media Manager</div><div class="edu-sub">Certificado</div></div>
+        <div class="edu-item"><div class="edu-title">Mantenimiento de PC</div><div class="edu-sub">Certificado</div></div>
+        <div class="edu-item"><div class="edu-title">Bachillerato</div><div class="edu-sub">U.E Libertadores de América · 2017</div></div>
+      </div>
+
+      <div>
+        <div class="s-label">Idiomas</div>
+        <div class="lang-row"><span class="lang-name">Español</span><span class="lang-lv">Nativo</span></div>
+        <div class="lang-row"><span class="lang-name">Inglés</span><span class="lang-lv">Básico A2</span></div>
+      </div>
+
+      <div>
+        <div class="s-label">Portafolio</div>
+        <div class="port-box">
+          <div class="port-label">Behance</div>
+          <div class="port-link">behance.net/ascento</div>
+          <div class="port-sub">Branding · Diseño · Identidad</div>
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
+</body>
+</html>
