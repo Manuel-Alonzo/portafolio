@@ -178,7 +178,7 @@
     </button>
     <div class="meta">
       <div class="title">El fracaso no existe</div>
-      <div class="who">solo datos · 0:57</div>
+      <div class="who">solo datos · 0:53</div>
     </div>
     <button class="loop on" id="loop" aria-label="Repetir" title="Repetir en bucle">
       <svg viewBox="0 0 24 24"><path d="M17 2l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="M7 22l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
@@ -187,7 +187,7 @@
   <div class="bar-row">
     <span class="time" id="cur">0:00</span>
     <div class="track" id="track"><div class="fill" id="fill"></div><div class="knob" id="knob"></div></div>
-    <span class="time end" id="dur">0:57</span>
+    <span class="time end" id="dur">0:53</span>
   </div>
   <div class="tip">📱 Móvil: menú del navegador → <b>Añadir a pantalla de inicio</b></div>
 </section>
@@ -200,19 +200,24 @@
 (function(){
   // Frases con su tiempo de inicio (segundos) — sincronizadas con el audio
   const CUES = [
-    [0.0,  "El fracaso no existe, Morty."],
-    [1.8,  "Es una etiqueta estúpida de los idiotas que se rinden."],
-    [4.4,  "En la ciencia no hay fracaso, solo datos."],
-    [8.5,  "Si construyes un reactor y te explota en la cara, no fracasaste: descubriste cómo no hacerlo."],
-    [13.1, "El problema es que la gente vincula su frágil identidad a lo que resulta."],
-    [16.5, "Si algo sale mal, se deprime, se arrastra y busca validación para que le digan que hizo su mejor esfuerzo."],
-    [21.6, "Qué patético."],
-    [22.6, "A la física le importa un carajo tu autoestima."],
-    [25.9, "El universo está gobernado por la entropía."],
-    [28.5, "El estado natural de las cosas es el caos."],
-    [30.8, "Que algo salga bien a la primera es una anomalía estadística."],
-    [35.0, "La diferencia entre un genio y un imbécil es que el genio procesa el error, ajusta la ecuación y vuelve a presionar el botón sin llorar."],
-    [42.8, "El fracaso es el precio para dominar la realidad."]
+    [0.00,  "El fracaso no existe, Morty."],
+    [1.72,  "Es una etiqueta estúpida de los idiotas que se rinden."],
+    [4.36,  "En la ciencia no hay fracaso, solo datos."],
+    [6.76,  "Si construyes un reactor y te explota en la cara, no fracasaste."],
+    [10.18, "Descubriste cómo no hacerlo."],
+    [11.88, "El problema es que la gente vincula su frágil identidad a lo que resulta."],
+    [15.78, "Si algo sale mal, se deprime."],
+    [17.46, "Se arrastran y buscan validación para que les digan que hicieron su mejor esfuerzo."],
+    [21.56, "Qué patético."],
+    [22.56, "A la física le importa un carajo tu autoestima."],
+    [24.80, "El universo está gobernado por la entropía."],
+    [27.14, "El estado natural de las cosas es el caos."],
+    [29.72, "Que algo salga bien a la primera es una anomalía estadística."],
+    [33.12, "La diferencia entre un genio y un imbécil es que el genio procesa el error, ajusta la ecuación y vuelve a presionar el botón sin llorar."],
+    [40.42, "El fracaso es el precio para dominar la realidad."],
+    [43.14, "Si no vas a fallar mil veces en el taller, quédate en la escuela con los mediocres."],
+    [47.34, "Desconecta tu ego, limpia el desastre, analiza las variables y vuelve a empezar."],
+    [51.70, "De eso se trata."]
   ];
 
   const audio = document.getElementById('audio');
@@ -263,7 +268,7 @@
   audio.addEventListener('loadedmetadata', () => { durEl.textContent = fmt(audio.duration); });
 
   audio.addEventListener('timeupdate', () => {
-    const t = audio.currentTime, d = audio.duration || 57;
+    const t = audio.currentTime, d = audio.duration || 53;
     const pct = (t/d)*100;
     fill.style.width = pct + '%';
     knob.style.left = pct + '%';
@@ -283,7 +288,7 @@
   function seek(clientX){
     const r = track.getBoundingClientRect();
     const p = Math.min(1, Math.max(0, (clientX - r.left)/r.width));
-    audio.currentTime = p * (audio.duration || 57);
+    audio.currentTime = p * (audio.duration || 53);
   }
   let dragging = false;
   track.addEventListener('pointerdown', e => { dragging = true; track.setPointerCapture(e.pointerId); seek(e.clientX); });
