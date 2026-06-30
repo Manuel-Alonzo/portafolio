@@ -198,4 +198,25 @@ html.has-scroll-smooth {
     top: 0;
     bottom: 0;  
 }
-</style></body></html>
+</style>
+<!-- Easter egg: escribe la palabra clave en cualquier parte para revelar el recordatorio oculto -->
+<script>
+(function(){
+  var seq="fracaso", buf="";
+  window.addEventListener("keydown", function(e){
+    var t=e.target;
+    if(t && (t.tagName==="INPUT"||t.tagName==="TEXTAREA"||t.isContentEditable)) return;
+    if(!e.key || e.key.length!==1) return;
+    buf=(buf+e.key.toLowerCase()).slice(-seq.length);
+    if(buf===seq){
+      buf="";
+      var o=document.createElement("div");
+      o.style.cssText="position:fixed;inset:0;z-index:99999;background:#08090c;opacity:0;transition:opacity .85s ease";
+      document.body.appendChild(o);
+      requestAnimationFrame(function(){ o.style.opacity="1"; });
+      setTimeout(function(){ window.location.href="motivacion.html"; }, 900);
+    }
+  });
+})();
+</script>
+</body></html>

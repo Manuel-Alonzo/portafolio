@@ -2,3 +2,9 @@ _archive/
 .DS_Store
 **/.DS_Store
 .vercel
+
+# Secrets / claves de API — nunca commitear
+.env
+**/.env
+.env.local
+**/.env.local
